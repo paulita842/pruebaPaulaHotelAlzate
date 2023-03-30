@@ -1,14 +1,14 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./style.css";
 
 const List = ({ listItems }) => {
   return (
     <div className="list">
-      {listItems.map(({ img }) => (
+      {listItems.map(({ img, hotel }) => (
         <div className="item">
           <div className="img">
-            <img src={img} alt="image description" />
+            1 habitación en: {hotel}
+            <img src={img} alt="description" />
           </div>
         </div>
       ))}
